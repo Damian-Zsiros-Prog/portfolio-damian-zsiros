@@ -1,15 +1,34 @@
 ---
+import Header from "../components/sections/Header.astro";
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Damian Zsiros | Backend Developer</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="font-poppins">
+		<Header />
 	</body>
+	<style is:global>
+		@font-face {
+			font-family: "Poppins";
+			src: url("/fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+			font-weight: normal;
+		}
+		@font-face {
+			font-family: "Poppins";
+			src: url("/fonts/Poppins/Poppins-Bold.ttf") format("ttf");
+			font-weight: bold;
+		}
+		:root {
+			--sideBGColor: #040b14;
+			--themeColor: #00a78e;
+			--iconBGColor: #2c2f3f;
+			--textBGColor: #525252;
+			--bgColor: #f7f7f7;
+		}
+	</style>
 </html>
