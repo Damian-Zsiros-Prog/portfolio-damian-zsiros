@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Bold.ttf") format("ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "SF UI Text";
+  src: url("/fonts/SF UI Text/SFUIText-Regular.ttf") format("ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SF UI Text";
+  src: url("/fonts/SF UI Text/SFUIText-Bold.ttf") format("ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "SF UI Text";
+  src: url("/fonts/SF UI Text/SFUIText-Heavy.ttf") format("ttf");
+  font-weight: 800;
+}
+:root {
+  --structureColor1: #010101;
+  --structureColor2: #0ca34d;
+  --structureColor3: #4a57f0;
+  --textColor1: #4f5356;
+  --textColor2: #ffffff;
+}
