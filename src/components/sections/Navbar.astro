@@ -1,0 +1,28 @@
+---
+import IconClose from "../icons/IconClose.astro";
+const { id } = Astro.props;
+---
+
+<section
+    class="top-0 opacity-70 w-screen min-h-screen place-items-center bg-[#fafafa] hidden absolute"
+    id={id}
+>
+    <nav>
+        <ul
+            class="flex flex-col gap-4 [&>li:hover>a]:underline [&>li>a]:text-4xl [&>li]:text-center [&>li>a]:uppercase relative"
+        >
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Sobre mi</a></li>
+            <li><a href="">Educacion</a></li>
+            <li><a href="">Comunidad</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+        <button
+            type="button"
+            id="closeMenuBtn"
+            class="w-[32px] m-auto my-4 hover:scale-110 transition cursor-pointer text-center flex"
+        >
+            <IconClose />
+        </button>
+    </nav>
+</section>

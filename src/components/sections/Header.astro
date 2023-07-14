@@ -1,59 +1,32 @@
 ---
-import { shortName, socialLinks } from "../../data.json";
-import Iconlinkedin from "../icons/Iconlinkedin.astro";
-import IconGithub from "../icons/IconGithub.astro";
-import IconTwitter from "../icons/IconTwitter.astro";
+import IconMenu from "../icons/IconMenu.astro";
+import Navbar from "./Navbar.astro";
 ---
 
-<header
-    class="w-[25rem] h-screen px-[30px] py-[15px] bg-[--sideBGColor] overflow-y-auto fixed left-0 top-0 bottom-0 transition z-[99]"
->
-    <div class="text-center my-[10px] mx-0">
-        <img
-            src="/profile-img-recorted.webp"
-            alt="Foto de perfil"
-            class="max-w-[200px] my-4 rounded-full mx-auto border-[10px] border-[--iconBGColor]"
-        />
-        <h1 class="text-4xl font-bold text-white">{shortName}</h1>
-        <div
-            class="[&>a>svg]:fill-[#ffff] [&>a]:transition [&>a:hover]:bg-[--themeColor] [&>a]:rounded-[50%] [&>a]:w-[40px] [&>a]:p-2 [&>a]:bg-[--iconBGColor] text-center my-2 flex gap-4 justify-center"
-        >
-            <a
-                href={socialLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <Iconlinkedin />
-            </a>
-            <a
-                href={socialLinks.github}
-                target="_blank"
-                class="hover:stroke-[#0000]"
-                rel="noopener noreferrer"
-            >
-                <IconGithub />
-            </a>
-            <a
-                href={socialLinks.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <IconTwitter />
-            </a>
-        </div>
-    </div>
-    <nav>
-        <ul>
-            <li><a href=""><span>Inicio</span></a></li>
-            <li><a href=""><span>Sobre mi</span></a></li>
-            <li><a href=""><span>Resumen</span></a></li>
-            <li><a href=""><span>Portfolio</span></a></li>
-            <li><a href=""><span>Contacto directo</span></a></li>
-        </ul>
-    </nav>
-    <footer>
-        <p>
-            &copy; Hecho por Damian Zsiros - @DamianZsirosDev (Twitch Username)
-        </p>
-    </footer>
+<header class="text-white py-8 flex justify-between px-12">
+    <a href="/" class="w-[80px]">
+        <img src="/name-icon.webp" alt="Logo Name" /></a
+    >
+    <button
+        type="button"
+        class="w-[70px] cursor-pointer transition hover:rotate-180 [&>svg]:w-[100%]"
+        id="menu-btn"><IconMenu /></button
+    >
 </header>
+
+<script>
+    const navbar = document.getElementById("navbar");
+    const menuBtn = document.getElementById("menu-btn");
+    const closeMenuBtn = document.getElementById("closeMenuBtn");
+    const toggleMenu = () => {
+        navbar.classList.toggle("hidden");
+        navbar.classList.toggle("grid");
+    };
+
+    menuBtn.addEventListener("click", () => {
+        toggleMenu();
+    });
+    closeMenuBtn.addEventListener("click", () => {
+        toggleMenu();
+    });
+</script>

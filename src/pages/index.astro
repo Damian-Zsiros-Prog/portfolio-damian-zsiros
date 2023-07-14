@@ -1,16 +1,18 @@
 ---
 import Header from "../components/sections/Header.astro";
+import Navbar from "../components/sections/Navbar.astro";
 ---
 
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/name-icon.webp" />
 		<meta name="viewport" content="width=device-width" />
 		<title>Damian Zsiros | Backend Developer</title>
 	</head>
-	<body class="font-poppins">
+	<body class="font-poppins bg-[var(--structureColor1)] m-auto">
 		<Header />
+		<Navbar id="navbar" />
 	</body>
 	<style is:global>
 		@font-face {
@@ -24,11 +26,11 @@ import Header from "../components/sections/Header.astro";
 			font-weight: bold;
 		}
 		:root {
-			--sideBGColor: #040b14;
-			--themeColor: #00a78e;
-			--iconBGColor: #2c2f3f;
-			--textBGColor: #525252;
-			--bgColor: #f7f7f7;
+			--structureColor1: #010101;
+			--structureColor2: #0ca34d;
+			--structureColor3: #4a57f0;
+			--textColor1: #4f5356;
+			--textColor2: #ffffff;
 		}
 	</style>
 </html>
