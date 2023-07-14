@@ -1,0 +1,66 @@
+---
+import IconGithub from "../../icons/IconGithub.astro";
+import IconLinkedin from "../../icons/IconLinkedin.astro";
+import IconTwitter from "../../icons/IconTwitter.astro";
+import { socialLinks } from "../../../data.json";
+---
+
+<section class="w-full flex justify-center gap-12 items-center">
+    <img
+        src="/profile-img-recorted.webp"
+        alt="Imagen de perfil"
+        class="rounded-full max-w-[300px]"
+    />
+    <div class="max-w-[50%] flex flex-col gap-4">
+        <h2
+            class="text-4xl font-extrabold uppercase font-sfui"
+            style="text-wrap:balance;"
+        >
+            Hola, Soy Damian Zsiros
+        </h2>
+        <p class="font-sfui" style="text-wrap:balance;">
+            ¡Hola! Soy Damian Zsiros, un estudiante de Ingeniería de Sistemas y
+            desarrollador web especializado en JavaScript, React y Node. Aunque
+            aún no tengo experiencia laboral formal, he adquirido conocimientos
+            sólidos y habilidades prácticas en el diseño y desarrollo de
+            aplicaciones web. He trabajado en proyectos personales y académicos,
+            donde he demostrado mi capacidad para enfrentar desafíos y entregar
+            resultados de calidad. Mi pasión por la programación y mi compromiso
+            me motivan a seguir creciendo y aprender más cada día. Si estás
+            buscando un desarrollador talentoso y comprometido, estoy emocionado
+            de trabajar contigo. ¡No dudes en contactarme!
+        </p>
+        <div class="flex justify-around items-center">
+            <div
+                class="flex gap-4 [&>a>svg]:w-[40px] [&>a>svg]:transition [&>a:hover>svg]:opacity-100 [&>a:hover>svg]:scale-110 [&>a>svg]:opacity-70"
+            >
+                <a
+                    href={socialLinks.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <IconLinkedin />
+                </a>
+                <a
+                    href={socialLinks.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <IconGithub />
+                </a>
+                <a
+                    href={socialLinks.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <IconTwitter />
+                </a>
+            </div>
+            <a
+                href=""
+                class="p-4 bg-[--structureColor2] rounded-full hover:bg-slate-800 transition"
+                >Descargar Hoja de Vida</a
+            >
+        </div>
+    </div>
+</section>

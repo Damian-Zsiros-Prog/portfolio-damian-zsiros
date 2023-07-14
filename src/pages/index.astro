@@ -1,6 +1,7 @@
 ---
 import Header from "../components/sections/Header/Header.astro";
 import Navbar from "../components/sections/Header/components/Navbar.astro";
+import Home from "../components/sections/Home/Home.astro";
 ---
 
 <html lang="es">
@@ -13,6 +14,9 @@ import Navbar from "../components/sections/Header/components/Navbar.astro";
 	<body class="font-poppins bg-[var(--structureColor1)] m-auto">
 		<Header />
 		<Navbar id="navbar" />
+		<main class="text-[--textColor2] px-12 w-full">
+			<Home />
+		</main>
 	</body>
 	<style is:global>
 		@font-face {
@@ -24,6 +28,21 @@ import Navbar from "../components/sections/Header/components/Navbar.astro";
 			font-family: "Poppins";
 			src: url("/fonts/Poppins/Poppins-Bold.ttf") format("ttf");
 			font-weight: bold;
+		}
+		@font-face {
+			font-family: "SF UI Text";
+			src: url("/fonts/SF UI Text/SFUIText-Regular.ttf") format("ttf");
+			font-weight: normal;
+		}
+		@font-face {
+			font-family: "SF UI Text";
+			src: url("/fonts/SF UI Text/SFUIText-Bold.ttf") format("ttf");
+			font-weight: bold;
+		}
+		@font-face {
+			font-family: "SF UI Text";
+			src: url("/fonts/SF UI Text/SFUIText-Heavy.ttf") format("ttf");
+			font-weight: 800;
 		}
 		:root {
 			--structureColor1: #010101;
