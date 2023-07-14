@@ -5,13 +5,15 @@ import IconTwitter from "../../icons/IconTwitter.astro";
 import { socialLinks } from "../../../data.json";
 ---
 
-<section class="w-full flex justify-center gap-12 items-center">
+<section
+    class="w-full flex-col md:flex-row flex justify-center gap-12 items-center"
+>
     <img
         src="/profile-img-recorted.webp"
         alt="Imagen de perfil"
         class="rounded-full max-w-[300px]"
     />
-    <div class="max-w-[50%] flex flex-col gap-4">
+    <div class="w-full md:max-w-[50%] flex flex-col gap-4">
         <h2
             class="text-4xl font-extrabold uppercase font-sfui"
             style="text-wrap:balance;"
@@ -30,7 +32,9 @@ import { socialLinks } from "../../../data.json";
             buscando un desarrollador talentoso y comprometido, estoy emocionado
             de trabajar contigo. ¡No dudes en contactarme!
         </p>
-        <div class="flex justify-around items-center">
+        <div
+            class="flex-col md:flex-row gap-4 flex justify-around items-center"
+        >
             <div
                 class="flex gap-4 [&>a>svg]:w-[40px] [&>a>svg]:transition [&>a:hover>svg]:opacity-100 [&>a:hover>svg]:scale-110 [&>a>svg]:opacity-70"
             >
