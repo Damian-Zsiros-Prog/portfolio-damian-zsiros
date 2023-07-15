@@ -2,6 +2,7 @@
 import Header from "../components/sections/Header/Header.astro";
 import Navbar from "../components/sections/Header/components/Navbar.astro";
 import Home from "../components/sections/Home/Home.astro";
+import Projects from "../components/sections/Projects/Projects.astro";
 ---
 
 <html lang="es">
@@ -14,8 +15,9 @@ import Home from "../components/sections/Home/Home.astro";
 	<body class="font-poppins bg-[var(--structureColor1)] m-auto">
 		<Header />
 		<Navbar id="navbar" />
-		<main class="text-[--textColor2] px-12 w-full">
+		<main class="text-[--textColor2] px-8 md:px-12 w-full">
 			<Home />
+			<Projects />
 		</main>
 	</body>
 	<style is:global>

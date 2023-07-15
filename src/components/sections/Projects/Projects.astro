@@ -1,0 +1,15 @@
+---
+import SectionContainer from "../../SectionContainer.astro";
+import { projects } from "../../../data.json";
+import Project from "./components/Project.astro";
+---
+
+<SectionContainer title="Proyectos">
+    <section class="flex flex-col justify-center">
+        <main
+            class="grid gap-[2rem] grid-cols-[repeat(auto-fit,minmax(200px,1fr))] place-items-center"
+        >
+            {projects.map((project) => <Project project={project} />)}
+        </main>
+    </section>
+</SectionContainer>
