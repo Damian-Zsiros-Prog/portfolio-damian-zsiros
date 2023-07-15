@@ -4,5 +4,37 @@
     "linkedin": "https://www.linkedin.com/in/damian-zsiros-gonzalez/",
     "twitter": "https://twitter.com/ProgDamian",
     "github": "https://github.com/Damian-Zsiros-Prog"
-  }
+  },
+  "projects": [
+    {
+      "title": "Aforshow",
+      "image": "/projectsImages/aforshow.png",
+      "description": "Es un proyecto de codigo abierto de la comunidad de Twitch de @afor_digital para un evento de charlas y talleres en vivo.",
+      "tags": [
+        "Astro",
+        "Supabase",
+        "Opengraph Image",
+        "HTML2Canvas",
+        "TailwindCSS"
+      ],
+      "linkCode": "https://github.com/Afordin/aforshow",
+      "linkPreview": "https://afor.show/"
+    },
+    {
+      "title": "Genchild",
+      "image": "/projectsImages/genchild.png",
+      "description": "GenChild es un sistema innovador de diagnóstico asistido para atención médica pediátrica. Ofrece una interfaz amigable, diagnósticos precisos y rápidos, información detallada sobre enfermedades, y se actualiza constantemente. Palabras clave: diagnóstico asistido, atención médica pediátrica.      ",
+      "tags": ["Next Js", "Next API Routes", "TailwindCSS", "Sonner"],
+      "linkCode": "",
+      "linkPreview": "https://genchild.vercel.app/"
+    },
+    {
+      "title": "Clon de la landing Page de Tesla",
+      "image": "/projectsImages/teslaClonLandingPage.jfif",
+      "description": "Desarrollé un clon de la página principal de Tesla, con una recreación precisa pero distintiva. Un proyecto impresionante para mi portafolio que muestra mis habilidades en diseño y desarrollo web.      ",
+      "tags": ["Astro", "TailwindCSS"],
+      "linkCode": "",
+      "linkPreview": "https://genchild.vercel.app/"
+    }
+  ]
 }
