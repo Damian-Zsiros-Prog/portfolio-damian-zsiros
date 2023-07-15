@@ -51,6 +51,14 @@
       ],
       "linkCode": "https://github.com/midudev/kings-league-project",
       "linkPreview": ""
+    },
+    {
+      "title": "Aplicacion de contactos usando POO con Javascript",
+      "image": "/projectsImages/contacts-app-poo-js.jfif",
+      "description": "Esta es una pequeña app web que permite crear y eliminar contactos con POO en Javascript.",
+      "tags": ["Javascript", "POO"],
+      "linkCode": "https://github.com/Damian-Zsiros-Prog/contacts-app-poo-js",
+      "linkPreview": "https://damian-zsiros-prog.github.io/contacts-app-poo-js/"
     }
   ]
 }
