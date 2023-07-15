@@ -59,6 +59,14 @@
       "tags": ["Javascript", "POO"],
       "linkCode": "https://github.com/Damian-Zsiros-Prog/contacts-app-poo-js",
       "linkPreview": "https://damian-zsiros-prog.github.io/contacts-app-poo-js/"
+    },
+    {
+      "title": "Aplicacion de precios de la API de Coingecko con React",
+      "image": "/projectsImages/react-coin-prices-coingecko-api.jfif",
+      "description": "Esta es una aplicacion de la api de CoinGecko en React usando Materialize CSS, componentes, custom hooks y demas...",
+      "tags": ["React", "React Hooks", "Materialize CSS", "Coingecko API"],
+      "linkCode": "https://github.com/Damian-Zsiros-Prog/react-prices-coingecko-crypto-api",
+      "linkPreview": "https://react-prices-coingecko-crypto-api.vercel.app/"
     }
   ]
 }
