@@ -33,8 +33,8 @@
       "image": "/projectsImages/teslaClonLandingPage.jfif",
       "description": "Desarrollé un clon de la página principal de Tesla, siguiendo una transmisión en vivo de @midudev en Twitch. Aunque no es una réplica exacta, capturé la esencia de la página y la adapté a mi propio estilo. ",
       "tags": ["Astro", "TailwindCSS"],
-      "linkCode": "https://clon-tesla-landing-page.vercel.app/",
-      "linkPreview": "https://genchild.vercel.app/"
+      "linkCode": "https://github.com/Damian-Zsiros-Prog/clon-tesla-landing-page",
+      "linkPreview": "https://clon-tesla-landing-page.vercel.app/"
     }
   ]
 }
