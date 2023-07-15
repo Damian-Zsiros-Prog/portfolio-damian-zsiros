@@ -18,11 +18,16 @@ import Navbar from "./components/Navbar.astro";
     const navbar = document.getElementById("navbar");
     const menuBtn = document.getElementById("menu-btn");
     const closeMenuBtn = document.getElementById("closeMenuBtn");
+    const links = document.querySelectorAll("#navbar > nav > ul > li > a");
     const toggleMenu = () => {
         navbar.classList.toggle("hidden");
         navbar.classList.toggle("grid");
     };
-
+    links.forEach((link) => {
+        link.addEventListener("click", () => {
+            toggleMenu();
+        });
+    });
     menuBtn.addEventListener("click", () => {
         toggleMenu();
     });
