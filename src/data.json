@@ -35,6 +35,22 @@
       "tags": ["Astro", "TailwindCSS"],
       "linkCode": "https://github.com/Damian-Zsiros-Prog/clon-tesla-landing-page",
       "linkPreview": "https://clon-tesla-landing-page.vercel.app/"
+    },
+    {
+      "title": "Clon de la web de la Kings League",
+      "image": "https://github.com/midudev/kings-league-project/raw/main/assets/static/ui-mockup-web-api.png",
+      "description": "Este fue un proyecto de código abierto del creador de contenido Midudev que pretendía hacer un clon de la web de la Kings League donde aporte en la parte en el desarrollo de la API y en algunas partes del Frontend, en el cual se uso el framework Astro.",
+      "tags": [
+        "NodeJs",
+        "Hono",
+        "Cloudflare Workers",
+        "Astro",
+        "TailwindCSS",
+        "Cheerio",
+        "Vitest"
+      ],
+      "linkCode": "https://github.com/midudev/kings-league-project",
+      "linkPreview": ""
     }
   ]
 }
