@@ -1,0 +1,60 @@
+---
+import IconLink from "./icons/IconLink.astro"
+import IconGithub from "./icons/IconGithub.astro"
+const { project } = Astro.props
+---
+
+<article
+  class="w-[100%] z-2 rounded-xl flex flex-col gap-2 bg-[#fafafa] hover:scale-105 opacity-75 hover:opacity-100 transition text-black p-2 md:p-4 mb-4"
+>
+  <div class="relative">
+    <img
+      src={`${project.image}`}
+      alt={project.title}
+      class="m-auto rounded-xl w-full transition"
+    />
+  </div>
+  <div class="flex flex-col md:flex-row justify-between items-center">
+    <h3 class="text-center text-2xl md:text-xl font-bold">
+      {project.title}
+    </h3>
+    <div class="flex gap-4 [&>a>svg]:w-8 md:[&>a>svg]:w-6 place-items-end">
+      {
+        project.linkPreview && (
+          <a
+            href={`${project.linkPreview || ""}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="opacity-70 transition hover:opacity-100"
+            title="Link de previsualizacion"
+          >
+            <IconLink />
+          </a>
+        )
+      }
+      {
+        project.linkCode && (
+          <a
+            href={`${project.linkCode || ""}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="opacity-70 transition hover:opacity-100"
+            title="Link de repositorio de Github"
+          >
+            <IconGithub />
+          </a>
+        )
+      }
+    </div>
+  </div>
+  <p class="text-sm md:text-sm">{project.description}</p>
+  <div class="flex gap-4 justify-center flex-wrap">
+    {
+      project.tags.map((tag) => (
+        <h5 class="shadow-2xl text-sm md:text-xs hover:shadow-lg font-bold p-2 cursor-default transition hover:scale-110 rounded-xl">
+          {tag}
+        </h5>
+      ))
+    }
+  </div>
+</article>

@@ -1,17 +1,20 @@
 ---
-import Header from "../components/sections/Header/Header.astro";
-import Navbar from "../components/sections/Header/components/Navbar.astro";
-import Home from "../components/sections/Home/Home.astro";
-import Projects from "../components/sections/Projects/Projects.astro";
+import Header from "../components/sections/Header/Header.astro"
+import Navbar from "../components/sections/Header/components/Navbar.astro"
+import Home from "../components/sections/Home/Home.astro"
+import Projects from "../components/sections/Projects/Projects.astro"
+import Publications from "../components/sections/Publications/Publications.astro"
+import LastWorks from "../components/sections/Works/Works.astro"
+import Habilidades from "../components/sections/Habilidades/Habilidades.astro"
 ---
 
 <html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/name-icon.webp" />
-		<meta
-			name="description"
-			content="¡Hola! Soy Damian Zsiros, un estudiante de Ingeniería de Sistemas y
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/name-icon.webp" />
+    <meta
+      name="description"
+      content="¡Hola! Soy Damian Zsiros, un estudiante de Ingeniería de Sistemas y
 		desarrollador web especializado en JavaScript, React y Node. Aunque
 		aún no tengo experiencia laboral formal, he adquirido conocimientos
 		sólidos y habilidades prácticas en el diseño y desarrollo de
@@ -21,10 +24,10 @@ import Projects from "../components/sections/Projects/Projects.astro";
 		me motivan a seguir creciendo y aprender más cada día. Si estás
 		buscando un desarrollador talentoso y comprometido, estoy emocionado
 		de trabajar contigo. ¡No dudes en contactarme!"
-		/>
-		<meta
-			name="og:description"
-			content="¡Hola! Soy Damian Zsiros, un estudiante de Ingeniería de Sistemas y
+    />
+    <meta
+      name="og:description"
+      content="¡Hola! Soy Damian Zsiros, un estudiante de Ingeniería de Sistemas y
 		desarrollador web especializado en JavaScript, React y Node. Aunque
 		aún no tengo experiencia laboral formal, he adquirido conocimientos
 		sólidos y habilidades prácticas en el diseño y desarrollo de
@@ -34,31 +37,33 @@ import Projects from "../components/sections/Projects/Projects.astro";
 		me motivan a seguir creciendo y aprender más cada día. Si estás
 		buscando un desarrollador talentoso y comprometido, estoy emocionado
 		de trabajar contigo. ¡No dudes en contactarme!"
-		/>
-		<meta
-			property="og:url"
-			content="https://portfolio-damian-zsiros.vercel.app/"
-		/>
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Damian Zsiros | Web Developer" />
-		<meta
-			name="og:image"
-			content="https://portfolio-damian-zsiros.vercel.app/opengraph-img.png"
-		/>
-		<meta name="viewport" content="width=device-width" />
-		<title>Damian Zsiros | Web Developer</title>
-	</head>
-	<body class="font-poppins bg-[var(--structureColor1)] m-auto">
-		<Header />
-		<Navbar id="navbar" />
-		<main
-			class="text-[--textColor2] px-8 md:px-12 w-full lg:max-w-[70%] m-auto"
-		>
-			<Home />
-			<Projects />
-		</main>
-	</body>
-	<style is:global>
-		@import url("/global.css");
-	</style>
+    />
+    <meta
+      property="og:url"
+      content="https://portfolio-damian-zsiros.vercel.app/"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Damian Zsiros | Web Developer" />
+    <meta
+      name="og:image"
+      content="https://portfolio-damian-zsiros.vercel.app/opengraph-img.png"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <title>Damian Zsiros | Web Developer</title>
+  </head>
+  <body class="font-poppins bg-[var(--structureColor1)] m-auto">
+    <Header />
+    <Navbar id="navbar" />
+    <main
+      class="text-[--textColor2] px-8 md:px-12 w-full lg:max-w-[70%] m-auto"
+    >
+      <Home />
+      <Habilidades />
+      <LastWorks />
+      <Projects />
+    </main>
+  </body>
+  <style is:global>
+    @import url("/global.css");
+  </style>
 </html>

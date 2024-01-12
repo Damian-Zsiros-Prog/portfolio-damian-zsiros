@@ -1,14 +1,14 @@
 ---
-const { title, id } = Astro.props;
+const { title, id } = Astro.props
 ---
 
 <section class="flex flex-col gap-8 my-8" id={`${id}`}>
-    <header>
-        <h2 class="text-center text-4xl font-sfui font-extrabold uppercase">
-            {title}
-        </h2>
-    </header>
-    <main>
-        <slot />
-    </main>
+  <header>
+    <h2 class="text-center text-3xl font-sfui font-extrabold uppercase">
+      {title}
+    </h2>
+  </header>
+  <main>
+    <slot />
+  </main>
 </section>

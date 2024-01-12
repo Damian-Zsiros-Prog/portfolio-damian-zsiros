@@ -1,25 +1,26 @@
 ---
-import IconClose from "../../../icons/IconClose.astro";
-const { id } = Astro.props;
+import IconClose from "../../../icons/IconClose.astro"
+const { id } = Astro.props
 ---
 
 <section
-    class="top-0 z-10 opacity-90 w-full h-screen place-items-center bg-[#bababa] hidden absolute"
-    id={id}
+  class="top-0 z-10 opacity-90 w-full h-screen place-items-center bg-[#bababa] hidden absolute"
+  id={id}
 >
-    <nav>
-        <ul
-            class="flex flex-col gap-4 [&>li:hover>a]:underline [&>li>a]:text-4xl [&>li]:text-center [&>li>a]:uppercase relative"
-        >
-            <li><a href="#homeSection">Sobre mi</a></li>
-            <li><a href="#projectsSection">Proyectos</a></li>
-        </ul>
-        <button
-            type="button"
-            id="closeMenuBtn"
-            class="w-[32px] m-auto my-4 hover:scale-110 transition cursor-pointer text-center flex"
-        >
-            <IconClose />
-        </button>
-    </nav>
+  <nav>
+    <ul
+      class="flex flex-col gap-4 [&>li:hover>a]:underline [&>li>a]:text-4xl [&>li]:text-center [&>li>a]:uppercase relative"
+    >
+      <li><a href="#homeSection">Sobre mi</a></li>
+      <li><a href="#lastWorksSection">Ultimos trabajos</a></li>
+      <li><a href="#projectsSection">Proyectos</a></li>
+    </ul>
+    <button
+      type="button"
+      id="closeMenuBtn"
+      class="w-[32px] m-auto my-4 hover:scale-110 transition cursor-pointer text-center flex"
+    >
+      <IconClose />
+    </button>
+  </nav>
 </section>

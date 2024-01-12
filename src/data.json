@@ -23,10 +23,11 @@
     {
       "title": "Genchild",
       "image": "/projectsImages/genchild.png",
-      "description": "GenChild es un sistema innovador de diagnóstico asistido para atención médica pediátrica. Ofrece una interfaz amigable, diagnósticos precisos y rápidos, información detallada sobre enfermedades, y se actualiza constantemente. Palabras clave: diagnóstico asistido, atención médica pediátrica.",
+      "description": "GenChild es un sistema innovador de diagnóstico asistido para atención médica pediátrica. Ofrece una interfaz amigable, diagnósticos precisos y rápidos, información detallada sobre enfermedades, y se actualiza constantemente. Palabras clave: diagnóstico asistido, atención médica pediátrica. Todo esto fue hecho con un impacto en la facultad de Medicina de la Universidad del Sinu ya que esta siendo utilizado para pruebas educativas en lo temas de pediatria.",
       "tags": ["Next Js", "Next API Routes", "TailwindCSS", "Sonner"],
       "linkCode": "",
-      "linkPreview": "https://genchild.vercel.app/"
+      "linkPreview": "https://genchild.vercel.app/",
+      "work": true
     },
     {
       "title": "Clon de la landing Page de Tesla",
@@ -35,6 +36,15 @@
       "tags": ["Astro", "TailwindCSS"],
       "linkCode": "https://github.com/Damian-Zsiros-Prog/clon-tesla-landing-page",
       "linkPreview": "https://clon-tesla-landing-page.vercel.app/"
+    },
+
+    {
+      "title": "Aplicacion de contactos usando POO con Javascript",
+      "image": "/projectsImages/contacts-app-poo-js.jfif",
+      "description": "Esta es una pequeña app web que permite crear y eliminar contactos con POO en Javascript.",
+      "tags": ["Javascript", "POO"],
+      "linkCode": "https://github.com/Damian-Zsiros-Prog/contacts-app-poo-js",
+      "linkPreview": "https://damian-zsiros-prog.github.io/contacts-app-poo-js/"
     },
     {
       "title": "Clon de la web de la Kings League",
@@ -53,20 +63,51 @@
       "linkPreview": ""
     },
     {
-      "title": "Aplicacion de contactos usando POO con Javascript",
-      "image": "/projectsImages/contacts-app-poo-js.jfif",
-      "description": "Esta es una pequeña app web que permite crear y eliminar contactos con POO en Javascript.",
-      "tags": ["Javascript", "POO"],
-      "linkCode": "https://github.com/Damian-Zsiros-Prog/contacts-app-poo-js",
-      "linkPreview": "https://damian-zsiros-prog.github.io/contacts-app-poo-js/"
-    },
-    {
       "title": "Aplicacion de precios de la API de Coingecko con React",
       "image": "/projectsImages/react-coin-prices-coingecko-api.jfif",
       "description": "Esta es una aplicacion de la api de CoinGecko en React usando Materialize CSS, componentes, custom hooks y demas...",
       "tags": ["React", "React Hooks", "Materialize CSS", "Coingecko API"],
       "linkCode": "https://github.com/Damian-Zsiros-Prog/react-prices-coingecko-crypto-api",
       "linkPreview": "https://react-prices-coingecko-crypto-api.vercel.app/"
+    }
+  ],
+  "habilidades": [
+    {
+      "name": "Next Js",
+      "img": "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png",
+      "linkOficial": "https://nextjs.org/"
+    },
+    {
+      "name": "React Js",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "linkOficial": "https://react.dev/"
+    },
+    {
+      "name": "Node Js",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+      "linkOficial": "https://nodejs.org/"
+    },
+    {
+      "name": "MySQL",
+      "img": "https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-and-moodle-elearningworld-5.png",
+      "linkOficial": "https://www.mysql.com/"
+    },
+    {
+      "name": "MongoDB",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png",
+      "linkOficial": "https://www.mongodb.com/"
+    },
+    {
+      "name": "HTML5",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
+    },
+    {
+      "name": "CSS3",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png"
+    },
+    {
+      "name": "Javascript",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
     }
   ]
 }

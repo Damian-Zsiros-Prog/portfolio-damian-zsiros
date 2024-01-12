@@ -1,0 +1,26 @@
+---
+import SectionContainer from "../../SectionContainer.astro"
+import { habilidades } from "../../../data.json"
+---
+
+<SectionContainer title="Habilidades" id="habilidadesSection">
+  <section class="flex flex-wrap justify-center gap-6 items-center transition">
+    {
+      habilidades.map((habilidad) => (
+        <a
+          href={habilidad.linkOficial || null}
+          target="_blank"
+          rel="noopener noreferrer"
+          class=""
+        >
+          <img
+            src={habilidad.img}
+            alt={habilidad.name}
+            title={habilidad.name}
+            class="w-[120px] opacity-80 hover:opacity-100  bg-gray-300 hover:bg-white transition p-2 rounded"
+          />
+        </a>
+      ))
+    }
+  </section>
+</SectionContainer>
