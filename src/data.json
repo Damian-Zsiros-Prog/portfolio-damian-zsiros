@@ -18,7 +18,22 @@
         "TailwindCSS"
       ],
       "linkCode": "https://github.com/Afordin/aforshow",
-      "linkPreview": "https://afor.show/"
+      "linkPreview": "https://afor.show/",
+      "work": true
+    },
+    {
+      "title": "Speedy Shortly",
+      "image": "/projectsImages/speedy-shortly.png",
+      "description": "Es un acortador de links sin necesidad de registro que permite copiar al portapapeles y generar codigo QR de los mismos links.",
+      "tags": [
+        "Next Js",
+        "Next API Routes",
+        "PlanetScale",
+        "MySQL Database",
+        "TailwindCSS"
+      ],
+      "linkCode": "https://github.com/Damian-Zsiros-Prog/speedy-shortly",
+      "linkPreview": "https://speedy-shortly.vercel.app/"
     },
     {
       "title": "Genchild",
