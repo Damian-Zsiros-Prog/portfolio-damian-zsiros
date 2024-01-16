@@ -1,6 +1,7 @@
 ---
 import IconLink from "./icons/IconLink.astro"
 import IconGithub from "./icons/IconGithub.astro"
+import IconVideo from "./icons/IconVideo.astro"
 const { project } = Astro.props
 ---
 
@@ -42,6 +43,19 @@ const { project } = Astro.props
             title="Link de repositorio de Github"
           >
             <IconGithub />
+          </a>
+        )
+      }
+      {
+        project.linkVideo && (
+          <a
+            href={`${project.linkVideo || ""}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="opacity-70 transition hover:opacity-100"
+            title="Link de video de relevancia"
+          >
+            <IconVideo />
           </a>
         )
       }
