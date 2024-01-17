@@ -37,6 +37,14 @@
       "linkPreview": "https://speedyshortly.damianzsiros.com/"
     },
     {
+      "title": "Secret Env",
+      "image": "/projectsImages/secret-env.jpeg",
+      "description": "Una extensión para Visual Studio Code que brinda seguridad adicional al trabajar con variables de entorno. Inspirada por retrasos en la extensión Cloak durante streams de Midudev, se diseñó para ser más eficiente. Con un comando ocultas todas las variables de entorno y con otro las vuelves a mostrar normalmente. ",
+      "tags": ["Typescript"],
+      "linkCode": "https://github.com/Damian-Zsiros-Prog/secret-env",
+      "linkPreview": "https://marketplace.visualstudio.com/items?itemName=DamianZsirosDev.secret-env"
+    },
+    {
       "title": "Genchild",
       "image": "/projectsImages/genchild.png",
       "description": "GenChild es un sistema innovador de diagnóstico asistido para atención médica pediátrica. Ofrece una interfaz amigable, diagnósticos precisos y rápidos, información detallada sobre enfermedades, y se actualiza constantemente. Palabras clave: diagnóstico asistido, atención médica pediátrica. Todo esto fue hecho con un impacto en la facultad de Medicina de la Universidad del Sinu ya que esta siendo utilizado para pruebas educativas en lo temas de pediatria.",
