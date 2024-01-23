@@ -31,12 +31,16 @@
   --textColor2: #ffffff;
 }
 
-.animate {
+.animate,
+img,
+svg {
   view-timeline: --section;
   view-timeline-axis: block;
 
   animation-timeline: --section;
   animation-name: show;
+  animation-range: entry 5% over 20%;
+  animation-fill-mode: both;
 }
 
 @keyframes show {
