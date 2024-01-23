@@ -1,8 +1,8 @@
 ---
-const { title, id } = Astro.props
+const { title, id, animate = false } = Astro.props
 ---
 
-<section class="flex flex-col gap-8 my-8" id={`${id}`}>
+<section class=`flex flex-col gap-8 my-8 ${animate && 'animate'}` id={`${id}`}>
   <header>
     <h2 class="text-center text-3xl font-sfui font-extrabold uppercase">
       {title}
