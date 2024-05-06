@@ -1,11 +1,12 @@
 ---
-import Header from "../components/sections/Header/Header.astro"
-import Navbar from "../components/sections/Header/components/Navbar.astro"
-import Home from "../components/sections/Home/Home.astro"
-import Projects from "../components/sections/Projects/Projects.astro"
-import Publications from "../components/sections/Publications/Publications.astro"
-import LastWorks from "../components/sections/Works/Works.astro"
-import Habilidades from "../components/sections/Habilidades/Habilidades.astro"
+import Header from "../components/sections/Header/Header.astro";
+import Navbar from "../components/sections/Header/components/Navbar.astro";
+import Home from "../components/sections/Home/Home.astro";
+import Projects from "../components/sections/Projects/Projects.astro";
+import Publications from "../components/sections/Publications/Publications.astro";
+import LastWorks from "../components/sections/Works/Works.astro";
+import Habilidades from "../components/sections/Habilidades/Habilidades.astro";
+import Experience from "../components/sections/Experience/Experience.astro";
 ---
 
 <html lang="es" class="scroll-smooth">
@@ -16,13 +17,13 @@ import Habilidades from "../components/sections/Habilidades/Habilidades.astro"
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V1SLK4D1YH"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || []
+      window.dataLayer = window.dataLayer || [];
       function gtag() {
-        dataLayer.push(arguments)
+        dataLayer.push(arguments);
       }
-      gtag("js", new Date())
+      gtag("js", new Date());
 
-      gtag("config", "G-V1SLK4D1YH")
+      gtag("config", "G-V1SLK4D1YH");
     </script>
     <meta
       name="description"
@@ -71,6 +72,7 @@ import Habilidades from "../components/sections/Habilidades/Habilidades.astro"
     >
       <Home />
       <Habilidades />
+      <Experience />
       <LastWorks />
       <Projects />
     </main>

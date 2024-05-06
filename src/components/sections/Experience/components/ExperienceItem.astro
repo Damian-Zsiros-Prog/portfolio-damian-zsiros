@@ -1,0 +1,79 @@
+---
+import Project from "./Project.astro";
+
+const { experiencia, latest } = Astro.props;
+---
+
+<li class="mb-10 ms-6">
+  <span
+    class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white"
+  >
+    <svg
+      class="w-5 h-5 text-blue-800"
+      fill="#000000"
+      viewBox="0 0 24 24"
+      id="work"
+      data-name="Flat Line"
+      xmlns="http://www.w3.org/2000/svg"
+      ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"
+        ><path
+          id="secondary"
+          d="M20.81,7.45,19,11.58A4,4,0,0,1,15.36,14H13v1H11V14H8.64A4,4,0,0,1,5,11.58L3.19,7.45A1,1,0,0,0,3,8V20a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V8A1,1,0,0,0,20.81,7.45Z"
+          style="fill: #2ca9bc; stroke-width: 2;"></path><path
+          id="primary"
+          d="M11,14H8.64A4,4,0,0,1,5,11.58L3.18,7.43A1,1,0,0,1,4,7H20a1,1,0,0,1,.82.43L19,11.58A4,4,0,0,1,15.36,14H13"
+          style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"
+        ></path><path
+          id="primary-2"
+          data-name="primary"
+          d="M16,7H8V4A1,1,0,0,1,9,3h6a1,1,0,0,1,1,1Zm5,13V8a1,1,0,0,0-1-1H4A1,1,0,0,0,3,8V20a1,1,0,0,0,1,1H20A1,1,0,0,0,21,20Zm-8-7H11v2h2Z"
+          style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"
+        ></path></g
+      ></svg
+    >
+  </span>
+  <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-100">
+    {experiencia.title}
+    {
+      latest && (
+        <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">
+          Actual
+        </span>
+      )
+    }
+  </h3>
+  <a
+    href={experiencia.empresa.link}
+    target="_blank"
+    class="block mb-2 text-xl leading-none text-gray-300 opacity-80 hover:opacity-100 transition hover:underline"
+  >
+    {experiencia.empresa.name}
+  </a>
+  <time class="block mb-2 text-md font-normal leading-none text-gray-300"
+    >{`${experiencia.date_ini.month} ${experiencia.date_ini.year}`} - {
+      `${experiencia.date_fin.month} ${experiencia.date_fin.year}`
+    }</time
+  >
+  <p class="mb-4 text-base font-normal text-gray-300" style="text-align: wrap;">
+    {experiencia.description}
+  </p>
+  {
+    experiencia.projects > 0 && (
+      <ol class="relative border-s border-gray-200">
+        {experiencia.projects.map((project) => {
+          <h1>{project.name}</h1>;
+        })}
+      </ol>
+    )
+  }
+  <ol class="relative border-s border-gray-200">
+    {
+      experiencia.projects && experiencia.projects.length > 0
+        ? experiencia.projects.map((project) => <Project project={project} />)
+        : null
+    }
+  </ol>
+</li>

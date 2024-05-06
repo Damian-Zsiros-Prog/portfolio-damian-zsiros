@@ -1,0 +1,59 @@
+---
+import SectionContainer from "../../SectionContainer.astro";
+import { experiencias } from "../../../data.json";
+import ExperienceItem from "./components/ExperienceItem.astro";
+import {constants} from '../../../constants'
+//ordenar experiencia por el date_ini.moth y date_ini.year
+const months = constants.MONTHS
+const experienciasSorted = experiencias.sort((a, b) => {
+  // Convertir los meses a números para facilitar la comparación
+ 
+
+  // Convertir las fechas de inicio y fin a números para comparar
+  const dateA_ini = new Date(
+    parseInt(a.date_ini.year),
+    months[a.date_ini.month] - 1
+  );
+  const dateB_ini = new Date(
+    parseInt(b.date_ini.year),
+    months[b.date_ini.month] - 1
+  );
+  const dateA_fin = new Date(
+    parseInt(a.date_fin.year),
+    months[a.date_fin.month] - 1
+  );
+  const dateB_fin = new Date(
+    parseInt(b.date_fin.year),
+    months[b.date_fin.month] - 1
+  );
+
+  // Comparar las fechas de inicio
+  if (dateA_ini < dateB_ini) {
+    return 1;
+  } else if (dateA_ini > dateB_ini) {
+    return -1;
+  } else {
+    // Si las fechas de inicio son iguales, comparar las fechas de fin
+    if (dateA_fin < dateB_fin) {
+      return 1;
+    } else if (dateA_fin > dateB_fin) {
+      return -1;
+    } else {
+      return 0;
+    }
+  }
+});
+
+---
+
+<SectionContainer title="Experiencia" id="experienciaSection">
+  <section>
+    <ol class="relative border-s border-gray-200">
+      {
+        experienciasSorted.map((experiencia,i) => (
+          <ExperienceItem experiencia={experiencia} latest={i==0} />
+        ))
+      }
+    </ol>
+  </section>
+</SectionContainer>

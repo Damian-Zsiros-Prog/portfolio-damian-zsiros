@@ -133,5 +133,53 @@
       "name": "Javascript",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
     }
+  ],
+  "experiencias": [
+    {
+      "date_ini":{
+        "month":"Febrero",
+        "year":"2024"
+      } ,
+      "date_fin":{
+        "month":"Mayo",
+        "year":"2024"
+      } ,
+      "title":"Practicas Formativas: Desarrollador Fullstack (Next Js,Nest Js)",
+      "description": "Durante mis prácticas como Desarrollador Fullstack (Next.js, Nest.js), exploré el backend con Nest.js y su arquitectura hexagonal, profundizando en su aplicación práctica. En el frontend con Next.js, utilicé Redux y librerías como animate.css, aprendiendo sobre componentización. Además, contribuí a un proyecto de landing en PHP sobre viajes, utilizando el CRM de Smartinfo SAS, donde gané experiencia valiosa. Estas prácticas ampliaron mis habilidades y me prepararon para futuros desafíos Fullstack.      ",
+      "empresa": {
+        "name":"Smartinfo SAS",
+        "link":"https://www.smartinfobusiness.com/"
+      },
+      "projects": [
+        {
+          "name":"Tharot",
+          "description":"Participé en el desarrollo de Tharot, un CRM innovador en Smart. Reunió fuentes de captación de clientes desde redes sociales hasta webs de eventos, ofreciendo estadísticas y gestión de leads para asesores, además de productividad para dueños de empresas. ¡Centralizando todo en un solo lugar, Tharot redefinió la eficiencia empresarial! 🚀 "
+          ,"link":""
+        }
+      ]
+    },
+    {
+      "date_ini":{
+        "month":"Enero",
+        "year":"2023"
+      } ,
+      "date_fin":{
+        "month":"Diciembre",
+        "year":"2023"
+      } ,
+      "title":"Freelance: Desarrollador Fullstack  (MERN y Astro)",
+      "description": "Durante un año como Freelance, me desempeñé como Desarrollador Fullstack MERN, trabajando de forma remota a través de Upwork. Con éxito, gestioné múltiples proyectos para diversos clientes, creando sitios web y páginas de aterrizaje que cumplían con sus requisitos y expectativas.",
+      "empresa": {
+        "name":"Freelance",
+        "link":""
+      },
+      "projects": [
+        {
+          "name":"Educate con Lina",
+          "description":"Desarrolle esta pagina web donde se mostraba la informacion de un cliente que tenia el canal de Youtube Educate con Lina dodne queria mostrar su informacion principal como persona y sobre las redes sociales del canal."
+          ,"link":"https://educate-con-lina.netlify.app/"
+        }
+      ]
+    }
   ]
 }

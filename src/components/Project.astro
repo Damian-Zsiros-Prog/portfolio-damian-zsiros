@@ -1,18 +1,18 @@
 ---
-import IconLink from "./icons/IconLink.astro"
-import IconGithub from "./icons/IconGithub.astro"
-import IconVideo from "./icons/IconVideo.astro"
-const { project } = Astro.props
+import IconLink from "./icons/IconLink.astro";
+import IconGithub from "./icons/IconGithub.astro";
+import IconVideo from "./icons/IconVideo.astro";
+const { project } = Astro.props;
 ---
 
 <article
-  class="w-[100%] z-2 rounded-xl flex flex-col gap-2 bg-[#fafafa] hover:scale-105 opacity-75 hover:opacity-100 transition text-black p-2 md:p-4 mb-4"
+  class="h-[500px] w-[100%] z-2 rounded-xl flex flex-col gap-2 justify-center bg-[#fafafa] hover:scale-105 opacity-75 hover:opacity-100 transition text-black p-2 md:p-4 mb-4"
 >
   <div class="relative">
     <img
       src={`${project.image}`}
       alt={project.title}
-      class="m-auto rounded-xl w-full transition max-h-[100px] object-cover"
+      class="rounded-xl w-[100%] transition h-[140px] object-cover"
     />
   </div>
   <div class="flex flex-col md:flex-row justify-between items-center">
