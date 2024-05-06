@@ -1,13 +1,13 @@
 ---
-import SectionContainer from "../../SectionContainer.astro"
-import { projects } from "../../../data.json"
-import Project from "../../Project.astro"
+import SectionContainer from "../../SectionContainer.astro";
+import { projects } from "../../../data.json";
+import Project from "../../Project.astro";
 ---
 
 <SectionContainer title="Proyectos" id="projectsSection">
   <section class="flex flex-col justify-center">
     <main
-      class="grid gap-[1rem] grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] place-items-center"
+      class="grid gap-[1rem] grid-cols-[repeat(auto-fit,minmax(250px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] place-items-center"
     >
       {
         projects
