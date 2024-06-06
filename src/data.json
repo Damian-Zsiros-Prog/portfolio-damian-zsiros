@@ -23,6 +23,14 @@
       "work": true
     },
     {
+      "title": "Code Genius",
+      "image": "/projectsImages/codegenius.png",
+      "description": "CodeGenius es una plataforma en línea que ofrece soluciones rápidas y efectivas para tus ejercicios de programación. Encuentra respuestas y resuelve tus desafíos de codificación con la ayuda de nuestro potente sistema basado en GPT. ¡Optimiza tu aprendizaje y alcanza tus metas en programación con CodeGenius!",
+      "tags": ["Next Js", "Next API Routes", "Gemini API", "TailwindCSS"],
+      "linkCode": "https://github.com/Damian-Zsiros-Prog/codegenius",
+      "linkPreview": "https://codegenius-chi.vercel.app/"
+    },
+    {
       "title": "Speedy Shortly",
       "image": "/projectsImages/speedy-shortly.png",
       "description": "Es un acortador de links sin necesidad de registro que permite copiar al portapapeles y generar codigo QR de los mismos links.",
@@ -30,7 +38,7 @@
         "Next Js",
         "Next API Routes",
         "PlanetScale",
-        "MySQL Database",
+        "MySQL",
         "TailwindCSS"
       ],
       "linkCode": "https://github.com/Damian-Zsiros-Prog/speedy-shortly",
@@ -48,7 +56,7 @@
       "title": "Genchild",
       "image": "/projectsImages/genchild.png",
       "description": "GenChild es un sistema innovador de diagnóstico asistido para atención médica pediátrica. Ofrece una interfaz amigable, diagnósticos precisos y rápidos, información detallada sobre enfermedades, y se actualiza constantemente. Palabras clave: diagnóstico asistido, atención médica pediátrica. Todo esto fue hecho con un impacto en la facultad de Medicina de la Universidad del Sinu ya que esta siendo utilizado para pruebas educativas en lo temas de pediatria.",
-      "tags": ["Next Js", "Next API Routes", "TailwindCSS", "Sonner"],
+      "tags": ["Next Js", "Next API Routes", "TailwindCSS", "Sonner", "MySQL"],
       "linkCode": "",
       "linkPreview": "https://genchild.net/",
       "work": true
@@ -107,6 +115,11 @@
       "linkOficial": "https://react.dev/"
     },
     {
+      "name": "PHP",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png",
+      "linkOficial": "https://www.php.net/"
+    },
+    {
       "name": "Node Js",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
       "linkOficial": "https://nodejs.org/"
@@ -136,48 +149,48 @@
   ],
   "experiencias": [
     {
-      "date_ini":{
-        "month":"Febrero",
-        "year":"2024"
-      } ,
-      "date_fin":{
-        "month":"Mayo",
-        "year":"2024"
-      } ,
-      "title":"Practicas Formativas: Desarrollador Fullstack (Next Js,Nest Js)",
+      "date_ini": {
+        "month": "Febrero",
+        "year": "2024"
+      },
+      "date_fin": {
+        "month": "Mayo",
+        "year": "2024"
+      },
+      "title": "Practicas Formativas: Desarrollador Fullstack (Next Js,Nest Js)",
       "description": "Durante mis prácticas como Desarrollador Fullstack (Next.js, Nest.js), exploré el backend con Nest.js y su arquitectura hexagonal, profundizando en su aplicación práctica. En el frontend con Next.js, utilicé Redux y librerías como animate.css, aprendiendo sobre componentización. Además, contribuí a un proyecto de landing en PHP sobre viajes, utilizando el CRM de Smartinfo SAS, donde gané experiencia valiosa. Estas prácticas ampliaron mis habilidades y me prepararon para futuros desafíos Fullstack.      ",
       "empresa": {
-        "name":"Smartinfo SAS",
-        "link":"https://www.smartinfobusiness.com/"
+        "name": "Smartinfo SAS",
+        "link": "https://www.smartinfobusiness.com/"
       },
       "projects": [
         {
-          "name":"Tharot",
-          "description":"Participé en el desarrollo de Tharot, un CRM innovador en Smart. Reunió fuentes de captación de clientes desde redes sociales hasta webs de eventos, ofreciendo estadísticas y gestión de leads para asesores, además de productividad para dueños de empresas. ¡Centralizando todo en un solo lugar, Tharot redefinió la eficiencia empresarial! 🚀 "
-          ,"link":""
+          "name": "Tharot",
+          "description": "Participé en el desarrollo de Tharot, un CRM innovador en Smart. Reunió fuentes de captación de clientes desde redes sociales hasta webs de eventos, ofreciendo estadísticas y gestión de leads para asesores, además de productividad para dueños de empresas. ¡Centralizando todo en un solo lugar, Tharot redefinió la eficiencia empresarial! 🚀 ",
+          "link": ""
         }
       ]
     },
     {
-      "date_ini":{
-        "month":"Enero",
-        "year":"2023"
-      } ,
-      "date_fin":{
-        "month":"Diciembre",
-        "year":"2023"
-      } ,
-      "title":"Freelance: Desarrollador Fullstack  (MERN y Astro)",
+      "date_ini": {
+        "month": "Enero",
+        "year": "2023"
+      },
+      "date_fin": {
+        "month": "Diciembre",
+        "year": "2023"
+      },
+      "title": "Freelance: Desarrollador Fullstack  (MERN y Astro)",
       "description": "Durante un año como Freelance, me desempeñé como Desarrollador Fullstack MERN, trabajando de forma remota a través de Upwork. Con éxito, gestioné múltiples proyectos para diversos clientes, creando sitios web y páginas de aterrizaje que cumplían con sus requisitos y expectativas.",
       "empresa": {
-        "name":"Freelance",
-        "link":""
+        "name": "Freelance",
+        "link": ""
       },
       "projects": [
         {
-          "name":"Educate con Lina",
-          "description":"Desarrolle esta pagina web donde se mostraba la informacion de un cliente que tenia el canal de Youtube Educate con Lina dodne queria mostrar su informacion principal como persona y sobre las redes sociales del canal."
-          ,"link":"https://educate-con-lina.netlify.app/"
+          "name": "Educate con Lina",
+          "description": "Desarrolle esta pagina web donde se mostraba la informacion de un cliente que tenia el canal de Youtube Educate con Lina dodne queria mostrar su informacion principal como persona y sobre las redes sociales del canal.",
+          "link": "https://educate-con-lina.netlify.app/"
         }
       ]
     }
