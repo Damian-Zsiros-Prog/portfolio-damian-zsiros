@@ -26,7 +26,7 @@
       "title": "Code Genius",
       "image": "/projectsImages/codegenius.png",
       "description": "CodeGenius es una plataforma en línea que ofrece soluciones rápidas y efectivas para tus ejercicios de programación. Encuentra respuestas y resuelve tus desafíos de codificación con la ayuda de nuestro potente sistema basado en GPT. ¡Optimiza tu aprendizaje y alcanza tus metas en programación con CodeGenius!",
-      "tags": ["Next Js", "Next API Routes", "Gemini API", "TailwindCSS"],
+      "tags": ["Next Js", "Next API Routes", "GTP-4 API", "TailwindCSS"],
       "linkCode": "https://github.com/Damian-Zsiros-Prog/codegenius",
       "linkPreview": "https://codegenius-chi.vercel.app/"
     },
@@ -189,7 +189,7 @@
       "projects": [
         {
           "name": "Educate con Lina",
-          "description": "Desarrolle esta pagina web donde se mostraba la informacion de un cliente que tenia el canal de Youtube Educate con Lina dodne queria mostrar su informacion principal como persona y sobre las redes sociales del canal.",
+          "description": "Desarrolle esta pagina web donde se mostraba la informacion de un cliente que tenia el canal de Youtube Educate con Lina donde queria mostrar su informacion principal como persona y sobre las redes sociales del canal.",
           "link": "https://educate-con-lina.netlify.app/"
         }
       ]
