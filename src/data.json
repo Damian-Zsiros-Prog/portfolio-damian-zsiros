@@ -150,6 +150,30 @@
   "experiencias": [
     {
       "date_ini": {
+        "month": "Junio",
+        "year": "2024"
+      },
+      "date_fin": {
+        "month": "",
+        "year": ""
+      },
+      "title": "Desarrollador Web PHP | Javascript | PostgresSQL",
+      "description": "En esta experiencia estoy trabajando en el desarrollo de una Extranet para un hotel reconocido de Cartagena de Indias, con la cual se manejan todos los procesos del hotel como reservas, ama de llaves, recepcion, informes, etc. .",
+      "empresa": {
+        "name": "Hotel Dorado Plaza",
+        "link": "https://doradoplaza.com/"
+      },
+      "projects": [
+        {
+          "name": "Extranet para Agentes Dorado Plaza",
+          "description": "Estoy en el desarrollo de una extranet que es una web para los agentes Dorado Plaza donde se podra registrar las reservas de los agentes, las agencias externas y otros canales del hotel. Ademas, el manejo de todos los procesos del hotel como Ama de Llaves, Recepcion, Alojamiento, etc. ",
+          "link": "https://doradoplaza.com/private/extranet/"
+        }
+      ],
+      "latest": true
+    },
+    {
+      "date_ini": {
         "month": "Febrero",
         "year": "2024"
       },

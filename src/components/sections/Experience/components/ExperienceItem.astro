@@ -54,7 +54,9 @@ const { experiencia, latest } = Astro.props;
   </a>
   <time class="block mb-2 text-md font-normal leading-none text-gray-300"
     >{`${experiencia.date_ini.month} ${experiencia.date_ini.year}`} - {
-      `${experiencia.date_fin.month} ${experiencia.date_fin.year}`
+      `${experiencia.date_fin.month} ${
+        latest ? "Actualidad" : experiencia.date_fin.year
+      }`
     }</time
   >
   <p class="mb-4 text-base font-normal text-gray-300" style="text-align: wrap;">
