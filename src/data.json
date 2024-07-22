@@ -115,6 +115,11 @@
       "linkOficial": "https://react.dev/"
     },
     {
+      "name": "Typescript",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png",
+      "linkOficial": "https://www.typescriptlang.org/"
+    },
+    {
       "name": "PHP",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png",
       "linkOficial": "https://www.php.net/"
