@@ -3,67 +3,59 @@ import IconGithub from "../../icons/IconGithub.astro";
 import IconLinkedin from "../../icons/IconLinkedin.astro";
 import IconTwitter from "../../icons/IconTwitter.astro";
 import { socialLinks } from "../../../data.json";
+import Button from "../../Button/Button.astro";
+import LayoutContainerSection from "../../LayoutContainerSection.astro";
+import SocialButton from "../../SocialButton/SocialButton.astro";
 ---
-
+<LayoutContainerSection>
+    
 <section
-    class="w-full flex-col md:flex-row flex justify-center gap-12 items-center min-h-[70vh] lg:h-full lg:min-h-[30vh] text-center md:text-left"
-    id="homeSection"
+class="w-full flex-col md:flex-row flex justify-center gap-12 items-center min-h-[70vh] lg:h-full lg:min-h-[30vh] text-center md:text-left"
+id="homeSection"
 >
-    <img
-        src="/profile-img-recorted.webp"
-        alt="Imagen de perfil"
-        class="rounded-full md:max-w-[300px] max-w-[200px]"
-    />
-    <div class="w-full md:max-w-[50%] flex flex-col gap-4">
-        <h2
-            class="text-4xl font-extrabold uppercase font-sfui"
-            style="text-wrap:balance;"
-        >
-            Hola, Soy Damian Zsiros
-        </h2>
-        <p class="font-sfui" style="text-wrap:balance;">
-            Soy un estudiante de Ingeniería de Sistemas y desarrollador web con
-            experiencia en JavaScript, React y Node. Aunque sin experiencia
-            laboral formal, he demostrado habilidades sólidas en diseño y
-            desarrollo de aplicaciones web a través de proyectos personales y
-            académicos. Mi pasión y compromiso me impulsan a crecer y aprender
-            continuamente. Disponible para colaborar contigo. Contáctame.
-        </p>
+<img
+    src="/profile-img-recorted.webp"
+    alt="Imagen de perfil"
+    class="rounded-full md:max-w-[300px] max-w-[200px]"
+/>
+<div class="w-full md:max-w-[50%] flex flex-col gap-4">
+    <h2
+        class="text-4xl font-extrabold uppercase font-sfui"
+        style="text-wrap:balance;"
+    >
+        Hola, Soy Damian Zsiros
+    </h2>
+    <p class="font-sfui" style="text-wrap:balance;">
+        Soy un estudiante de Ingeniería de Sistemas y desarrollador web.
+        Experiencias en JavaScript, React y Node. Aunque sin experiencia,
+        laboral formal, he demostrado habilidades sólidas en diseño y
+        Desarrollo de aplicaciones web a través de proyectos personales y
+        Académicos.
+    </p>
+    <div
+        class="flex-col md:flex-row gap-4 flex justify-around items-center "
+    >
         <div
-            class="flex-col md:flex-row gap-4 flex justify-around items-center"
+            class="flex gap-4 [&>a>svg]:w-[40px] [&>a>svg]:transition [&>a:hover>svg]:opacity-100 [&>a:hover>svg]:scale-110 [&>a>svg]:opacity-70"
         >
-            <div
-                class="flex gap-4 [&>a>svg]:w-[40px] [&>a>svg]:transition [&>a:hover>svg]:opacity-100 [&>a:hover>svg]:scale-110 [&>a>svg]:opacity-70"
-            >
-                <a
-                    href={socialLinks.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <IconLinkedin />
-                </a>
-                <a
-                    href={socialLinks.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <IconGithub />
-                </a>
-                <a
-                    href={socialLinks.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <IconTwitter />
-                </a>
-            </div>
-            <a
-                href="https://mnf.red/damian-zsiros/classic"
+            <!-- <a
+                href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="p-4 bg-[--structureColor2] rounded-full hover:bg-slate-800 transition"
-                >Descargar Hoja de Vida</a
             >
+                <IconLinkedin />
+            </a> -->
+            <SocialButton Icon={IconLinkedin} bgColor="#0274b3" text="Linkedin" link={socialLinks.linkedin} />
+            <SocialButton Icon={IconGithub} bgColor="#0274b3" text="Github" link={socialLinks.github} />
+            <SocialButton Icon={IconTwitter} bgColor="#0274b3" text="Twitter" link={socialLinks.twitter} />
+      
         </div>
+        <Button typeElement="a" href="https://mnf.red/damian-zsiros/classic"
+        target="_blank" target = "_blank"
+            rel="noopener noreferrer"
+            text="Descargar CV" />
     </div>
+</div>
 </section>
+
+</LayoutContainerSection>

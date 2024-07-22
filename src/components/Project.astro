@@ -6,13 +6,13 @@ const { project } = Astro.props;
 ---
 
 <article
-  class="h-fit md:h-[500px] w-[100%] z-2 rounded-xl flex flex-col gap-2 justify-center bg-[#fafafa] hover:scale-105 opacity-75 hover:opacity-100 transition text-black p-2 md:p-4 mb-4"
+  class="h-full  w-[100%] z-2 rounded-xl flex flex-col gap-2  bg-[#FFFFFF] hover:scale-105 transition text-black p-2 md:py-4 md:px-4 max-w-[500px]  mb-4"
 >
-  <div class="relative">
+  <div class="relative bg-[#D3E2DB] rounded-lg py-4 max-h-[60%] ">
     <img
       src={`${project.image}`}
       alt={project.title}
-      class="rounded-xl w-[100%] transition h-[140px] object-cover"
+      class="rounded-xl w-[100%] transition object-cover h-[200px] "
     />
   </div>
   <div class="flex flex-col md:flex-row justify-between items-center">

@@ -24,11 +24,12 @@
   font-weight: 800;
 }
 :root {
-  --structureColor1: #010101;
+  --structureColor1: #07160F;
   --structureColor2: #0ca34d;
   --structureColor3: #4a57f0;
   --textColor1: #4f5356;
   --textColor2: #ffffff;
+  --bg-section: #154128;
 }
 
 .animate,

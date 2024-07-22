@@ -4,21 +4,22 @@ import { habilidades } from "../../../data.json";
 ---
 
 <SectionContainer title="Habilidades" id="habilidadesSection">
-  <section class="flex flex-wrap justify-center gap-6 items-center transition">
+  <section class="flex flex-wrap justify-center gap-6 items-center transition bg-white rounded-lg py-4">
     {
       habilidades.map((habilidad) => (
         <a
           href={habilidad.linkOficial || null}
           target="_blank"
           rel="noopener noreferrer"
-          class=""
+          class="hover:scale-110 transition text-center [&>span]:hover:opacity-100"
         >
           <img
             src={habilidad.img}
             alt={habilidad.name}
             title={habilidad.name}
-            class=" h-[100px] object-cover opacity-80 hover:opacity-100  bg-gray-300 hover:bg-white transition p-2 rounded"
+            class="h-[100px] object-cover hover:rounded-lg  transition p-2 "
           />
+          <span class="text-black text-center opacity-0 text-lg m-auto transition">{habilidad.name}</span>
         </a>
       ))
     }

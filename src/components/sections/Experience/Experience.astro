@@ -45,15 +45,35 @@ const experienciasSorted = experiencias.sort((a, b) => {
 });
 
 ---
+<style>
+  :root {
+  --primary-color: #212121;
+  --background-color: #111;
+}
 
+
+/* Timeline Container */
+.timeline {
+  margin: 20px auto;
+  padding: 20px;
+  display:flex;
+  justify-content: center;
+}
+
+</style>
 <SectionContainer title="Experiencia" id="experienciaSection">
-  <section>
+  <!-- <section>
     <ol class="relative border-s border-gray-200">
+      </ol>
+      </section> -->
+  <div class="timeline">
+    <div class="outer">
+     
       {
         experienciasSorted.map((experiencia,i) => (
           <ExperienceItem experiencia={experiencia} latest={i==0} />
         ))
       }
-    </ol>
-  </section>
+    </div>
+  </div>
 </SectionContainer>

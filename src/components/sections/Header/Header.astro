@@ -1,39 +1,41 @@
 ---
 import IconMenu from "../../icons/IconMenu.astro";
 import Navbar from "./components/Navbar.astro";
+import NavbarDesktop from "./components/NavbarDesktop.astro";
 ---
 
 <header
-    class="text-white py-8 flex justify-between px-12 w-full lg:max-w-[70%] m-auto"
+  class="text-white py-8 flex justify-between gap-4 text-center px-12 w-full lg:max-w-[70%] m-auto"
 >
-    <a href="/" class="w-[80px]">
-        <img src="/name-icon.webp" alt="Logo Name" /></a
-    >
-    <button
-        type="button"
-        class="w-[70px] cursor-pointer transition hover:rotate-180 [&>svg]:w-[100%]"
-        id="menu-btn"><IconMenu /></button
-    >
+  <a href="/" class="w-[80px]">
+    <img src="/name-icon.webp" alt="Logo Name" /></a
+  >
+  <NavbarDesktop />
+  <button
+    type="button"
+    class="w-[70px] cursor-pointer transition hover:rotate-180 [&>svg]:w-[100%] lg:hidden"
+    id="menu-btn"><IconMenu /></button
+  >
 </header>
 
 <script>
-    const navbar = document.getElementById("navbar");
-    const menuBtn = document.getElementById("menu-btn");
-    const closeMenuBtn = document.getElementById("closeMenuBtn");
-    const links = document.querySelectorAll("#navbar > nav > ul > li > a");
-    const toggleMenu = () => {
-        navbar.classList.toggle("hidden");
-        navbar.classList.toggle("grid");
-    };
-    links.forEach((link) => {
-        link.addEventListener("click", () => {
-            toggleMenu();
-        });
+  const navbar = document.getElementById("navbar");
+  const menuBtn = document.getElementById("menu-btn");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
+  const links = document.querySelectorAll("#navbar > nav > ul > li > a");
+  const toggleMenu = () => {
+    navbar.classList.toggle("hidden");
+    navbar.classList.toggle("grid");
+  };
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      toggleMenu();
     });
-    menuBtn.addEventListener("click", () => {
-        toggleMenu();
-    });
-    closeMenuBtn.addEventListener("click", () => {
-        toggleMenu();
-    });
+  });
+  menuBtn.addEventListener("click", () => {
+    toggleMenu();
+  });
+  closeMenuBtn.addEventListener("click", () => {
+    toggleMenu();
+  });
 </script>

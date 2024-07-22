@@ -6,107 +6,107 @@
     "github": "https://github.com/Damian-Zsiros-Prog"
   },
   "projects": [
-    {
-      "title": "Aforshow",
-      "image": "/projectsImages/aforshow.png",
-      "description": "Es un proyecto de codigo abierto de la comunidad de Twitch de @afor_digital para un evento de charlas y talleres en vivo. Donde fui el maximo contribuidor en el repositorio de Github aporrtando mucho a la comunidad y gue respaldado con la visibilidad del proyecto.",
-      "tags": [
-        "Astro",
-        "Supabase",
-        "Opengraph Image",
-        "HTML2Canvas",
-        "TailwindCSS"
-      ],
-      "linkCode": "https://github.com/Afordin/aforshow",
-      "linkPreview": "https://afor.show/",
-      "linkVideo": "https://www.linkedin.com/posts/damian-zsiros-gonzalez_aforshow-aforshow-aforshow-activity-7080198233590751233-4RQS?utm_source=share",
-      "work": true
-    },
-    {
-      "title": "Code Genius",
-      "image": "/projectsImages/codegenius.png",
-      "description": "CodeGenius es una plataforma en línea que ofrece soluciones rápidas y efectivas para tus ejercicios de programación. Encuentra respuestas y resuelve tus desafíos de codificación con la ayuda de nuestro potente sistema basado en GPT. ¡Optimiza tu aprendizaje y alcanza tus metas en programación con CodeGenius!",
-      "tags": ["Next Js", "Next API Routes", "GTP-4 API", "TailwindCSS"],
-      "linkCode": "https://github.com/Damian-Zsiros-Prog/codegenius",
-      "linkPreview": "https://codegenius-chi.vercel.app/"
-    },
-    {
-      "title": "Speedy Shortly",
-      "image": "/projectsImages/speedy-shortly.png",
-      "description": "Es un acortador de links sin necesidad de registro que permite copiar al portapapeles y generar codigo QR de los mismos links.",
-      "tags": [
-        "Next Js",
-        "Next API Routes",
-        "PlanetScale",
-        "MySQL",
-        "TailwindCSS"
-      ],
-      "linkCode": "https://github.com/Damian-Zsiros-Prog/speedy-shortly",
-      "linkPreview": "https://speedyshortly.damianzsiros.com/"
-    },
-    {
-      "title": "Secret Env",
-      "image": "/projectsImages/secret-env.jpeg",
-      "description": "Una extensión para Visual Studio Code que brinda seguridad adicional al trabajar con variables de entorno. Inspirada por retrasos en la extensión Cloak durante streams de Midudev, se diseñó para ser más eficiente. Con un comando ocultas todas las variables de entorno y con otro las vuelves a mostrar normalmente. ",
-      "tags": ["Typescript"],
-      "linkCode": "https://github.com/Damian-Zsiros-Prog/secret-env",
-      "linkPreview": "https://marketplace.visualstudio.com/items?itemName=DamianZsirosDev.secret-env"
-    },
-    {
-      "title": "Genchild",
-      "image": "/projectsImages/genchild.png",
-      "description": "GenChild es un sistema innovador de diagnóstico asistido para atención médica pediátrica. Ofrece una interfaz amigable, diagnósticos precisos y rápidos, información detallada sobre enfermedades, y se actualiza constantemente. Palabras clave: diagnóstico asistido, atención médica pediátrica. Todo esto fue hecho con un impacto en la facultad de Medicina de la Universidad del Sinu ya que esta siendo utilizado para pruebas educativas en lo temas de pediatria.",
-      "tags": ["Next Js", "Next API Routes", "TailwindCSS", "Sonner", "MySQL"],
-      "linkCode": "",
-      "linkPreview": "https://genchild.net/",
-      "work": true
-    },
-    {
-      "title": "Clon de la landing Page de Tesla",
-      "image": "/projectsImages/teslaClonLandingPage.jfif",
-      "description": "Desarrollé un clon de la página principal de Tesla, siguiendo una transmisión en vivo de @midudev en Twitch. Aunque no es una réplica exacta, capturé la esencia de la página y la adapté a mi propio estilo. ",
-      "tags": ["Astro", "TailwindCSS"],
-      "linkCode": "https://github.com/Damian-Zsiros-Prog/clon-tesla-landing-page",
-      "linkPreview": "https://clon-tesla-landing-page.vercel.app/"
-    },
+  {
+    "title": "Aforshow",
+    "image": "/projectsImages/aforshow.png",
+    "description": "Proyecto de código abierto para un evento en vivo de la comunidad de Twitch @afor_digital. Fui el mayor contribuidor en el repositorio de GitHub, aportando significativamente al desarrollo y visibilidad del proyecto.",
+    "tags": [
+      "Astro",
+      "Supabase",
+      "Opengraph Image",
+      "HTML2Canvas",
+      "TailwindCSS"
+    ],
+    "linkCode": "https://github.com/Afordin/aforshow",
+    "linkPreview": "https://afor.show/",
+    "linkVideo": "https://www.linkedin.com/posts/damian-zsiros-gonzalez_aforshow-aforshow-aforshow-activity-7080198233590751233-4RQS?utm_source=share",
+    "work": true
+  },
+  {
+    "title": "Code Genius",
+    "image": "/projectsImages/codegenius.png",
+    "description": "Plataforma en línea que ofrece soluciones rápidas para ejercicios de programación usando GPT. Desarrollé la interfaz y la integración con la API para proporcionar respuestas precisas.",
+    "tags": ["Next Js", "Next API Routes", "GTP-4 API", "TailwindCSS"],
+    "linkCode": "https://github.com/Damian-Zsiros-Prog/codegenius",
+    "linkPreview": "https://codegenius-chi.vercel.app/"
+  },
+  {
+    "title": "Speedy Shortly",
+    "image": "/projectsImages/speedy-shortly.png",
+    "description": "Acortador de links sin registro que permite copiar enlaces al portapapeles y generar códigos QR. Implementé las funcionalidades principales y la interfaz de usuario.",
+    "tags": [
+      "Next Js",
+      "Next API Routes",
+      "PlanetScale",
+      "MySQL",
+      "TailwindCSS"
+    ],
+    "linkCode": "https://github.com/Damian-Zsiros-Prog/speedy-shortly",
+    "linkPreview": "https://speedyshortly.damianzsiros.com/"
+  },
+  {
+    "title": "Secret Env",
+    "image": "/projectsImages/secret-env.jpeg",
+    "description": "Extensión para Visual Studio Code que oculta y muestra variables de entorno con comandos simples. Desarrollé esta herramienta inspirada por los retrasos de la extensión Cloak.",
+    "tags": ["Typescript"],
+    "linkCode": "https://github.com/Damian-Zsiros-Prog/secret-env",
+    "linkPreview": "https://marketplace.visualstudio.com/items?itemName=DamianZsirosDev.secret-env"
+  },
+  {
+    "title": "Genchild",
+    "image": "/projectsImages/genchild.png",
+    "description": "Sistema de diagnóstico asistido para atención médica pediátrica, usado en la Universidad del Sinu para pruebas educativas en pediatría. Desarrollé la interfaz amigable y la lógica de diagnóstico.",
+    "tags": ["Next Js", "Next API Routes", "TailwindCSS", "Sonner", "MySQL"],
+    "linkCode": "",
+    "linkPreview": "https://genchild.net/",
+    "work": true
+  },
+  {
+    "title": "Clon de la landing Page de Tesla",
+    "image": "/projectsImages/teslaClonLandingPage.jfif",
+    "description": "Clon de la página principal de Tesla, desarrollado siguiendo una transmisión en vivo de @midudev. Capturé la esencia del diseño original y lo adapté.",
+    "tags": ["Astro", "TailwindCSS"],
+    "linkCode": "https://github.com/Damian-Zsiros-Prog/clon-tesla-landing-page",
+    "linkPreview": "https://clon-tesla-landing-page.vercel.app/"
+  },
+  {
+    "title": "Aplicación de contactos usando POO con Javascript",
+    "image": "/projectsImages/contacts-app-poo-js.jfif",
+    "description": "Aplicación web para crear y eliminar contactos utilizando Programación Orientada a Objetos (POO) en Javascript. Implementé las funciones de gestión de contactos y la estructura de clases.",
+    "tags": ["Javascript", "POO"],
+    "linkCode": "https://github.com/Damian-Zsiros-Prog/contacts-app-poo-js",
+    "linkPreview": "https://damian-zsiros-prog.github.io/contacts-app-poo-js/"
+  },
+  {
+    "title": "Clon de la web de la Kings League",
+    "image": "https://github.com/midudev/kings-league-project/raw/main/assets/static/ui-mockup-web-api.png",
+    "description": "Proyecto de código abierto de Midudev para clonar la web de la Kings League. Contribuí al desarrollo de la API y partes del Frontend usando Astro.",
+    "tags": [
+      "NodeJs",
+      "Hono",
+      "Cloudflare Workers",
+      "Astro",
+      "TailwindCSS",
+      "Cheerio",
+      "Vitest"
+    ],
+    "linkCode": "https://github.com/midudev/kings-league-project",
+    "linkPreview": ""
+  },
+  {
+    "title": "Aplicación de precios de la API de Coingecko con React",
+    "image": "/projectsImages/react-coin-prices-coingecko-api.jfif",
+    "description": "Aplicación en React para mostrar precios de criptomonedas usando la API de CoinGecko. Utilicé Materialize CSS, componentes y custom hooks.",
+    "tags": ["React", "React Hooks", "Materialize CSS", "Coingecko API"],
+    "linkCode": "https://github.com/Damian-Zsiros-Prog/react-prices-coingecko-crypto-api",
+    "linkPreview": "https://react-prices-coingecko-crypto-api.vercel.app/"
+  }
+],
 
-    {
-      "title": "Aplicacion de contactos usando POO con Javascript",
-      "image": "/projectsImages/contacts-app-poo-js.jfif",
-      "description": "Esta es una pequeña app web que permite crear y eliminar contactos con POO en Javascript.",
-      "tags": ["Javascript", "POO"],
-      "linkCode": "https://github.com/Damian-Zsiros-Prog/contacts-app-poo-js",
-      "linkPreview": "https://damian-zsiros-prog.github.io/contacts-app-poo-js/"
-    },
-    {
-      "title": "Clon de la web de la Kings League",
-      "image": "https://github.com/midudev/kings-league-project/raw/main/assets/static/ui-mockup-web-api.png",
-      "description": "Este fue un proyecto de código abierto del creador de contenido Midudev que pretendía hacer un clon de la web de la Kings League donde aporte en la parte en el desarrollo de la API y en algunas partes del Frontend, en el cual se uso el framework Astro.",
-      "tags": [
-        "NodeJs",
-        "Hono",
-        "Cloudflare Workers",
-        "Astro",
-        "TailwindCSS",
-        "Cheerio",
-        "Vitest"
-      ],
-      "linkCode": "https://github.com/midudev/kings-league-project",
-      "linkPreview": ""
-    },
-    {
-      "title": "Aplicacion de precios de la API de Coingecko con React",
-      "image": "/projectsImages/react-coin-prices-coingecko-api.jfif",
-      "description": "Esta es una aplicacion de la api de CoinGecko en React usando Materialize CSS, componentes, custom hooks y demas...",
-      "tags": ["React", "React Hooks", "Materialize CSS", "Coingecko API"],
-      "linkCode": "https://github.com/Damian-Zsiros-Prog/react-prices-coingecko-crypto-api",
-      "linkPreview": "https://react-prices-coingecko-crypto-api.vercel.app/"
-    }
-  ],
   "habilidades": [
     {
       "name": "Next Js",
-      "img": "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png",
+      "img": "https://www.svgrepo.com/show/342062/next-js.svg",
       "linkOficial": "https://nextjs.org/"
     },
     {
@@ -121,7 +121,7 @@
     },
     {
       "name": "Node Js",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+      "img": "https://cdn.iconscout.com/icon/free/png-512/free-nodejs-1-226034.png?f=webp&w=256",
       "linkOficial": "https://nodejs.org/"
     },
     {
@@ -131,7 +131,7 @@
     },
     {
       "name": "MongoDB",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png",
+      "img": "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg",
       "linkOficial": "https://www.mongodb.com/"
     },
     {
@@ -157,8 +157,9 @@
         "month": "",
         "year": ""
       },
-      "title": "Desarrollador Web PHP | Javascript | PostgresSQL",
-      "description": "En esta experiencia estoy trabajando en el desarrollo de una Extranet para un hotel reconocido de Cartagena de Indias, con la cual se manejan todos los procesos del hotel como reservas, ama de llaves, recepcion, informes, etc. .",
+      "actual": true,
+      "title": "Desarrollador Web",
+      "description": "En esta experiencia estoy trabajando en el desarrollo de una Extranet de un hotel, con la cual se manejan todos los procesos del mismo como reservas, ama de llaves, recepcion, informes, etc. .",
       "empresa": {
         "name": "Hotel Dorado Plaza",
         "link": "https://doradoplaza.com/"
@@ -181,8 +182,8 @@
         "month": "Mayo",
         "year": "2024"
       },
-      "title": "Practicas Formativas: Desarrollador Fullstack (Next Js,Nest Js)",
-      "description": "Durante mis prácticas como Desarrollador Fullstack (Next.js, Nest.js), exploré el backend con Nest.js y su arquitectura hexagonal, profundizando en su aplicación práctica. En el frontend con Next.js, utilicé Redux y librerías como animate.css, aprendiendo sobre componentización. Además, contribuí a un proyecto de landing en PHP sobre viajes, utilizando el CRM de Smartinfo SAS, donde gané experiencia valiosa. Estas prácticas ampliaron mis habilidades y me prepararon para futuros desafíos Fullstack.      ",
+      "title": "Practicante de Ingenieria ",
+      "description": "Durante mis prácticas como Desarrollador Fullstack (Next.js, Nest.js), exploré el backend con Nest.js y su arquitectura hexagonal, profundizando en su aplicación práctica. En el frontend con Next.js, utilicé Redux y librerías como animate.css, aprendiendo sobre componentización. Además, contribuí a un proyecto de landing en PHP sobre viajes, utilizando el CRM de Smartinfo SAS, donde gané experiencia valiosa. ",
       "empresa": {
         "name": "Smartinfo SAS",
         "link": "https://www.smartinfobusiness.com/"
@@ -204,7 +205,7 @@
         "month": "Diciembre",
         "year": "2023"
       },
-      "title": "Freelance: Desarrollador Fullstack  (MERN y Astro)",
+      "title": "Freelance",
       "description": "Durante un año como Freelance, me desempeñé como Desarrollador Fullstack MERN, trabajando de forma remota a través de Upwork. Con éxito, gestioné múltiples proyectos para diversos clientes, creando sitios web y páginas de aterrizaje que cumplían con sus requisitos y expectativas.",
       "empresa": {
         "name": "Freelance",

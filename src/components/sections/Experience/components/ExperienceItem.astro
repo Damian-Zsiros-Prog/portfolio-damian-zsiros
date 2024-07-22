@@ -1,81 +1,170 @@
 ---
+import LinkUnderlined from "../../../LinkUnderlined/LinkUnderlined.astro";
 import Project from "./Project.astro";
 
 const { experiencia, latest } = Astro.props;
 ---
 
-<li class="mb-10 ms-6">
-  <span
-    class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white"
-  >
-    <svg
-      class="w-5 h-5 text-blue-800"
-      fill="#000000"
-      viewBox="0 0 24 24"
-      id="work"
-      data-name="Flat Line"
-      xmlns="http://www.w3.org/2000/svg"
-      ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-        id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"
-        ><path
-          id="secondary"
-          d="M20.81,7.45,19,11.58A4,4,0,0,1,15.36,14H13v1H11V14H8.64A4,4,0,0,1,5,11.58L3.19,7.45A1,1,0,0,0,3,8V20a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V8A1,1,0,0,0,20.81,7.45Z"
-          style="fill: #2ca9bc; stroke-width: 2;"></path><path
-          id="primary"
-          d="M11,14H8.64A4,4,0,0,1,5,11.58L3.18,7.43A1,1,0,0,1,4,7H20a1,1,0,0,1,.82.43L19,11.58A4,4,0,0,1,15.36,14H13"
-          style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"
-        ></path><path
-          id="primary-2"
-          data-name="primary"
-          d="M16,7H8V4A1,1,0,0,1,9,3h6a1,1,0,0,1,1,1Zm5,13V8a1,1,0,0,0-1-1H4A1,1,0,0,0,3,8V20a1,1,0,0,0,1,1H20A1,1,0,0,0,21,20Zm-8-7H11v2h2Z"
-          style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"
-        ></path></g
-      ></svg
-    >
-  </span>
-  <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-100">
-    {experiencia.title}
-    {
-      latest && (
-        <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">
-          Actual
-        </span>
-      )
-    }
-  </h3>
-  <a
-    href={experiencia.empresa.link}
-    target="_blank"
-    class="block mb-2 text-xl leading-none text-gray-300 opacity-80 hover:opacity-100 transition hover:underline"
-  >
-    {experiencia.empresa.name}
-  </a>
-  <time class="block mb-2 text-md font-normal leading-none text-gray-300"
-    >{`${experiencia.date_ini.month} ${experiencia.date_ini.year}`} - {
-      `${experiencia.date_fin.month} ${
-        latest ? "Actualidad" : experiencia.date_fin.year
-      }`
-    }</time
-  >
-  <p class="mb-4 text-base font-normal text-gray-300" style="text-align: wrap;">
-    {experiencia.description}
-  </p>
-  {
-    experiencia.projects > 0 && (
-      <ol class="relative border-s border-gray-200">
-        {experiencia.projects.map((project) => {
-          <h1>{project.name}</h1>;
-        })}
-      </ol>
-    )
+
+<style>
+  
+/* Card container */
+.card {
+  position: relative;
+  max-width: 80%;
+  margin:auto;
+}
+
+/* setting padding based on even or odd */
+.card:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid var(--structureColor2);
+}
+
+/* Setting the border of top, bottom, left */
+.card:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
+@media only screen and (max-width: 400px) {
+  .card:nth-child(odd)::before {
+    top: -5px;
+    bottom: -5px;
   }
-  <ol class="relative border-s border-gray-200">
-    {
-      experiencia.projects && experiencia.projects.length > 0
-        ? experiencia.projects.map((project) => <Project project={project} />)
-        : null
-    }
-  </ol>
-</li>
+}
+
+/* Setting the border of top, bottom, right */
+.card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: var(--structureColor2);
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid var(--structureColor2);
+}
+.subtitle {
+  color: var(--structureColor2);
+  position: relative;
+  font-size: 1em;
+}
+
+
+
+/* text right if the card is even  */
+.card:nth-child(even) > .outer > .info > .title {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.card:nth-child(odd) > .outer > .info > .title::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.card:nth-child(even) > .outer > .info > .title::before {
+  right: -45px;
+}
+/* text right if the card is even  */
+.card:nth-child(even) > .outer > .info > .subtitle {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.card:nth-child(odd) > .outer > .info > .subtitle::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.card:nth-child(even) > .outer > .info > .subtitle::before {
+  right: -45px;
+}
+/* text right if the card is even  */
+.card:nth-child(even) > .outer > .info > .a-timeline {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.card:nth-child(odd) > .outer > .info > .a-timeline::before {
+  display: flex;
+  justify-content: left;}
+
+.card:nth-child(even) > .outer > .info > .a-timeline {
+ display: flex;
+ justify-content: right;
+}
+
+.outer{
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+</style>
+<div class="card">
+ <div class="outer">
+  <div class="info">
+    <h3 class="title  text-md md:text-lg font-bold">{experiencia.title}</h3>
+    <h4 class="subtitle  text-md md:text-lg font-semibold">{!experiencia.actual ? `
+    ${experiencia.date_ini.month} de ${experiencia.date_ini.year} - ${experiencia.date_fin.month} de ${experiencia.date_fin.year} ` : `${experiencia.date_ini.month} de ${experiencia.date_ini.year} -  Actualidad`} </h4>
+    <LinkUnderlined text={experiencia.empresa.name} link={experiencia.empresa.link}  target="_blank" className="subtitle a-timeline "/>
+    <p class="mt-3">{experiencia.description}</p>
+  </div>
+ </div>
+</div>

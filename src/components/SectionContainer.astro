@@ -1,14 +1,18 @@
 ---
+import LayoutContainerSection from "./LayoutContainerSection.astro"
+
 const { title, id, animate = false } = Astro.props
 ---
 
-<section class=`flex flex-col gap-8 my-8 ${animate && 'animate'}` id={`${id}`}>
+
+
+<LayoutContainerSection className=`${animate && 'animate'}` id={`${id}`}>
   <header>
     <h2 class="text-center text-3xl font-sfui font-extrabold uppercase">
       {title}
     </h2>
   </header>
-  <main>
+  <main >
     <slot />
   </main>
-</section>
+</LayoutContainerSection>
