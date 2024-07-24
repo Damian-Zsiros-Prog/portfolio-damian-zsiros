@@ -4,7 +4,9 @@ import { habilidades } from "../../../data.json";
 ---
 
 <SectionContainer title="Habilidades" id="habilidadesSection">
-  <section class="flex flex-wrap justify-center gap-6 items-center transition bg-white rounded-lg py-4">
+  <section
+    class="flex flex-wrap justify-center gap-6 items-center transition rounded-lg py-4"
+  >
     {
       habilidades.map((habilidad) => (
         <a
@@ -19,7 +21,9 @@ import { habilidades } from "../../../data.json";
             title={habilidad.name}
             class="h-[100px] object-cover hover:rounded-lg  transition p-2 "
           />
-          <span class="text-black text-center opacity-0 text-lg m-auto transition">{habilidad.name}</span>
+          <span class="text-white text-center opacity-0 text-lg m-auto transition">
+            {habilidad.name}
+          </span>
         </a>
       ))
     }
